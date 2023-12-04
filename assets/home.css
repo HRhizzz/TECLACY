@@ -1,0 +1,277 @@
+:root {
+  --templatecolor1: #0b1320;
+  --templatecolor2: #1c3f60;
+  --templatecolor3: #afc1d0;
+  --templatecolor4: #f3f6fa;
+  --teks-landingpage-color: #000000;
+  /* font-family: "Lexend Exa", sans-serif;
+  font-family: "Montserrat", sans-serif; */
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 1. Header  Start*/
+.navbar-container {
+  /* ukuran navigasi */
+  width: 1920px;
+  height: 120px;
+  /* warna background navigasi */
+  background-color: var(--templatecolor1);
+  /* posisi navigasi */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* posisi saat scroll */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  /* posisi logo */
+  margin: 30px 30px;
+  padding: 0;
+  border: 0;
+  /* warna teks dan jenis font */
+  color: var(--templatecolor4);
+  font-family: "Lexend Exa", sans-serif;
+  font-size: larger;
+}
+
+.nav-list ul {
+  /* posisi list navigasi */
+  display: flex;
+  flex-direction: row;
+}
+.nav-list ul li {
+  /* jenis font yang digunakan pada atribut a class nav-list */
+  font-family: "Montserrat", sans-serif;
+}
+.nav-list ul li a {
+  /* warna a class nav-list*/
+  color: var(--templatecolor3);
+}
+
+.profile-sign ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.profile-signup-button {
+  /* Mengatur box dengan radius sudut pada sign up */
+  border-radius: 16px;
+  /* Memberikan warna latar belakang */
+  background-color: var(--templatecolor3);
+  /* Padding dan margin untuk tata letak */
+  padding: 10px 20px;
+  margin-right: 10px; /* Memberikan ruang di antara kotak */
+}
+
+.profile-signup-button a {
+  /* jenis font yang digunakan pada atribut a di class profile-sign */
+  font-family: "Montserrat", sans-serif;
+  /* warna a class profile sign */
+  color: var(--templatecolor1);
+}
+
+.profile-signin-button {
+  /* Mengatur box dengan radius sudut pada sign in */
+  border-radius: 16px;
+  /* Memberikan warna latar belakang */
+  background-color: var(--templatecolor2);
+  /* Padding dan margin untuk tata letak */
+  padding: 10px 20px;
+  margin-right: 10px; /* Memberikan ruang di antara kotak */
+}
+
+.profile-signin-button a {
+  /* jenis font yang digunakan pada atribut a di class profile-sign */
+  font-family: "Montserrat", sans-serif;
+  /* warna a class profile sign */
+  color: var(--templatecolor4);
+}
+
+/* Header  End*/
+
+/* Pembagian body menjadi 2 antara sidebar(aside) dan main  */
+.body-container {
+  display: flex;
+  flex: 1; /* Mengisi ruang yang tersedia di body-container */
+  height: calc(
+    100vh - 120px
+  ); /* Mengurangi tinggi navbar dari tinggi viewport */
+}
+
+/*2. Aside Start */
+aside {
+  flex-basis: 20%; /* Mengisi 20% lebar */
+  flex-basis: 20%;
+  position: sticky;
+  top: 120px; /* Menggeser aside agar tidak tertutup navbar */
+  height: calc(100vh - 120px);
+}
+.sidebox {
+  width: 368px;
+  height: 1080px;
+  background-color: var(--templatecolor2); /* Warna latar belakang sidebar */
+  /* sidebar sticky */
+  position: sticky;
+  top: 107.2px;
+  height: calc(100vh - 100px);
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sidebar ul li {
+  /* Mengatur box dengan radius sudut pada sidebar */
+  width: 300px;
+  height: 60px;
+  border-radius: 16px;
+  /* Memberikan warna latar belakang */
+  background-color: var(--templatecolor3);
+  /* mengatur format */
+  padding: 20px;
+  margin: 40px 40px 40px 0px;
+}
+.sidebar ul li a {
+  /* jenis font yang digunakan pada atribut a di class sidebar */
+  font-family: "Montserrat", sans-serif;
+  /* warna a class sidebar */
+  color: var(--templatecolor1);
+  /* posisi text */
+}
+/* Aside End */
+
+/*3. Main Start */
+main {
+  flex-basis: 80%; /* Mengisi 80% lebar */
+  background-color: var(--templatecolor4); /* Warna latar belakang main */
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+/*3.1 Landing Page Start */
+.landing-page {
+  /* ukuran page */
+  width: 1536px;
+  height: 980px;
+  /* Tambahkan posisi dan format isi dari class ini */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+.box-bg-landing-page {
+  /* menentukan tinggi lebar div  */
+  height: 800px;
+  width: 1500px;
+  border-radius: 30px;
+  /* Menentukan ukuran gambar */
+  background-image: url(../image/unandf.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Menetukan posisi gambar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Membagi grid class ini */
+}
+
+/* Gaya teks di dalam box */
+.text-landing-page {
+  font-family: "Montserrat", sans-serif;
+}
+.welcome-text-landing-page {
+  color: var(--templatecolor1);
+  font-size: 40px;
+  font-weight: bolder;
+  max-width: 80%; /* Maksimum lebar teks */
+  padding: 20px; /* Spasi dalam div */
+  margin: 0 auto; /* Posisi tengah teks */
+}
+.description-text-landing-page {
+  color: var(--teks-landingpage-color);
+  font-size: 36px;
+  font-weight: bold;
+  max-width: 80%; /* Maksimum lebar teks */
+  padding: 20px; /* Spasi dalam div */
+  margin: 0 auto; /* Posisi tengah teks */
+}
+/* Landing Page End */
+
+/*3.2 Destiny Flow Landing Page Start */
+.studyflow-landing-page {
+  /* ukuran page */
+  width: 1536px;
+  height: 980px;
+  /* Tambahkan posisi dan format isi dari class ini */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-studyflow-landing-page {
+  /* menentukan tinggi lebar div  */
+  height: 800px;
+  width: 1500px;
+  border-radius: 30px;
+  /* Menetukan posisi gambar */
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.gambar-studyflow-landing-page {
+  flex: 1;
+  width: 660px;
+  height: 660px;
+  background-size: cover;
+}
+/* Destiny Flow Landing Page End */
+/* Main End */
+@media screen and (min-width: 1921px) {
+  .body-container {
+    flex-direction: row;
+  }
+
+  main {
+    position: sticky;
+    top: 0;
+    flex: 1;
+    max-width: calc(
+      100% - 368px
+    ); /* Lebar maksimum main adalah lebar layar dikurangi lebar aside */
+  }
+
+  aside {
+    position: sticky;
+    top: 0;
+    width: 368px;
+  }
+}

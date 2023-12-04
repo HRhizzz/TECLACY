@@ -1,0 +1,182 @@
+:root {
+  --templatecolor1: #0b1320;
+  --templatecolor2: #1c3f60;
+  --templatecolor3: #afc1d0;
+  --templatecolor4: #f3f6fa;
+  --teks-landingpage-color: #000000;
+  /* font-family: "Lexend Exa", sans-serif;
+  font-family: "Montserrat", sans-serif; */
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(
+    --templatecolor1
+  ); /* Menggunakan warna dari variabel --templatecolor1 */
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: 0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px 30px;
+}
+
+a {
+  text-decoration: none;
+}
+/* Halaman Latar Belakang Start*/
+.login-logo {
+  width: 1920px;
+  height: 1080px;
+  background-color: var(--templatecolor1);
+  z-index: 0;
+  position: absolute;
+}
+.login-logo p {
+  width: 200px;
+  height: 100px;
+  margin: 60px 0 0 60px;
+  font-family: "Lexend Exa", sans-serif;
+  font-size: 39px;
+  font-weight: bold;
+  color: var(--templatecolor4);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Halaman Latar Belakang End*/
+
+/* Wrapper Start*/
+.posisi-wrapper {
+  /* ukuran pemosisian */
+  width: 1920px;
+  height: 1080px;
+  /* tingkat wrapper */
+  z-index: 1;
+  position: relative;
+  /* posisi item dalam div posisi-wrapper */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.login-page-wrapper {
+  /* ukuran wrapper */
+  width: 1188px;
+  height: 648px;
+  /* posisi wrapper */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  /* warna bg */
+  background-color: var(--templatecolor2);
+  /* mengatur bentuk wrapper */
+  border-radius: 20px;
+}
+
+.login-page-wrapper a {
+  color: var(--templatecolor2);
+  text-decoration: none;
+}
+
+.login-page-wrapper a:hover {
+  text-decoration: underline;
+}
+/* Wrapper End*/
+form {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  color: var(--templatecolor4);
+  position: relative;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--templatecolor4);
+  text-align: left;
+  top: 70px;
+}
+.input-field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: var(--templatecolor3);
+  font-weight: 700;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.input-field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid var(--templatecolor3);
+  background-color: var(--templatecolor4);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+  font-size: 1rem;
+  top: 2px;
+  transform: translateY(-120%);
+}
+button {
+  background: var(--templatecolor1);
+  color: var(--templatecolor4);
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+button:hover {
+  color: var(--templatecolor2);
+  border-color: var(--templatecolor2);
+  background: rgba(255, 255, 255, 0.85);
+}
+.login p {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--templatecolor4);
+}
+.login a {
+  margin-left: 10px;
+  text-align: center;
+  margin-top: 30px;
+  color: var(--templatecolor4);
+}
