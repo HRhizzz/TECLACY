@@ -7,7 +7,7 @@
     <title>TECLACY</title>
 
     <!-- CSS Utama -->
-    <link rel="stylesheet" href="assets/signup.css" />
+    <link rel="stylesheet" href="assets/registrasi.css" />
     <!-- Script Utama -->
     <script src="js/script.js"></script>
 
@@ -29,29 +29,29 @@
       <form action="#">
         <h2>Mari Bergabung</h2>
         <h3>Masukkan data diri anda</h3>
-        <div class="input-field">
-          <input type="text" required>
-          <label>Nama Lengkap</label>
+        <div class="btn-reg" >
+          <label name="nama-lengkap">Nama Lengkap</label>
+          <input type="text" name="nama-lengkap" id="nama-lengkap" required>
         </div>
-        <div class="input-field">
-          <input type="text" required>
-          <label>NIM</label>
+        <div class="btn-reg">
+          <label name="nim">NIM</label>
+          <input type="text" name="nim" id="nim" required>
         </div>
-        <div class="input-field"> 
-          <input type="email" required>
-          <label>Email</label>
+        <div class="btn-reg"> 
+          <label name="email">Email</label>
+          <input type="email" name="email" id="email" required>
         </div>
-        <div class="input-field">
-          <input type="password" required>
-          <label>Password</label>
+        <div class="btn-reg">
+          <label name="password1">Password</label>
+          <input type="password" name="password1" id="password1" required>
         </div>
-        <div class="input-field">
-          <input type="password" required>
-          <label>Konfirmasi Password</label>
+        <div class="btn-reg">
+          <label name="password2">Konfirmasi Password</label>
+          <input type="password" name="password2" id="password2" required>          
         </div>
       </br>
         <button type="submit" onclick="redirectToSignIn()">Daftar</button>
-        <div class="login">
+        <div class="link-logfromreg">
           <p>Sudah punya akun?<a href="signin.html">sign in</a></p>
         </div>
       </form>
