@@ -57,7 +57,7 @@ a {
   height: 1080px;
   /* tingkat wrapper */
   z-index: 1;
-  position: relative;
+  position: absolute;
   /* posisi item dalam div posisi-wrapper */
   display: flex;
   justify-content: center;
@@ -66,8 +66,8 @@ a {
 }
 .login-page-wrapper {
   /* ukuran wrapper */
-  width: 1188px;
-  height: 648px;
+  width: 50%;
+  height: 70%;
   /* posisi wrapper */
   display: flex;
   justify-content: center;
