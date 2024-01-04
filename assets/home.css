@@ -15,6 +15,7 @@
 
 body {
   height: 100vh;
+  width: 100vw;
   margin: 0;
 
   display: flex;
@@ -33,7 +34,7 @@ a {
 /* 1. Header  Start*/
 .navbar-container {
   /* ukuran navigasi */
-  width: 1920px;
+  width: 100vw;
   height: 120px;
   /* warna background navigasi */
   background-color: var(--templatecolor1);
