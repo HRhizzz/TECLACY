@@ -70,45 +70,50 @@
     <main>
       <div id="landing-page" class="landing-page">
         <div class="box-bg-landing-page">
-          <div class="text-landing-page">
-            <div class="welcome-text-landing-page">
-              <p>Selamat datang di Teclacy!</p>
-            </div>
-            <div class="description-text-landing-page">
-              <p>
-                Tempat yang memandu langkah Anda menuju karir yang cerah di
-                dunia Teknologi Informasi. Temukan arah dan panduan yang tepat
-                untuk mengembangkan potensi Anda dalam industri yang terus
-                berkembang ini. Mari menjelajahi peluang, mendapatkan wawasan,
-                dan meraih kesuksesan dalam karir TI yang sesuai dengan minat
-                dan keahlian Anda.
-              </p>
-            </div>
+          <div class="welcome-text-landing-page">
+            <p>Selamat datang di Teclacy!</p>
+          </div>
+          <div class="description-text-landing-page">
+            <p>
+              Tempat yang memandu langkah Anda menuju karir yang cerah di
+              dunia Teknologi Informasi. Temukan arah dan panduan yang tepat
+              untuk mengembangkan potensi Anda dalam industri yang terus
+              berkembang ini. Mari menjelajahi peluang, mendapatkan wawasan,
+              dan meraih kesuksesan dalam karir TI yang sesuai dengan minat
+              dan keahlian Anda.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="studyflow-landing-page">
-        <div class="box-studyflow-landing-page">
-          <div class="gambar-studyflow-landing-page"></div>
-          <div class="studyflow-text-landing-page">
-            <div class="welcome-studyflow-text-landing-page">
-              <p>Study Flow: Mengalir Bersama Minat Anda</p>
-            </div>
-            <div class="description-studyflow-text-landing-page">
-              <p>
-                Dengan fitur unggulan kami, "Study Flow," Anda akan menemukan
-                panduan belajar yang sesuai dengan minat Anda. Bagi kami,
-                setiap minat adalah kunci untuk membuka potensi Anda dalam
-                bidang IT. Melalui tag minat yang tersedia, Anda akan
-                diarahkan ke alur belajar yang cocok dengan minat Anda,
-                menjadikan proses belajar lebih menarik dan relevan. Temukan
-                koneksi antara minat Anda dengan beragam bidang IT di
-                sampingnya.
-              </p>
-            </div>
+        <div class="landing-page">
+          <div class="welcome-text-landing-page">
+            <p>Selamat datang di Teclacy!</p>
+          </div>
+          <div class="description-text-landing-page">
+            <p>
+              Tempat yang memandu langkah Anda menuju karir yang cerah di
+              dunia Teknologi Informasi. Temukan arah dan panduan yang tepat
+              untuk mengembangkan potensi Anda dalam industri yang terus
+              berkembang ini. Mari menjelajahi peluang, mendapatkan wawasan,
+              dan meraih kesuksesan dalam karir TI yang sesuai dengan minat
+              dan keahlian Anda.
+            </p>
           </div>
         </div>
-      </div>
+        <div class="landing-page">
+          <div class="welcome-text-landing-page">
+            <p>Selamat datang di Teclacy!</p>
+          </div>
+          <div class="description-text-landing-page">
+            <p>
+              Tempat yang memandu langkah Anda menuju karir yang cerah di
+              dunia Teknologi Informasi. Temukan arah dan panduan yang tepat
+              untuk mengembangkan potensi Anda dalam industri yang terus
+              berkembang ini. Mari menjelajahi peluang, mendapatkan wawasan,
+              dan meraih kesuksesan dalam karir TI yang sesuai dengan minat
+              dan keahlian Anda.
+            </p>
+          </div>
+        </div>
     </main>
   </div>
   <footer>
