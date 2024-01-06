@@ -4,8 +4,6 @@
   --templatecolor3: #afc1d0;
   --templatecolor4: #f3f6fa;
   --teks-landingpage-color: #000000;
-  /* font-family: "Lexend Exa", sans-serif;
-  font-family: "Montserrat", sans-serif; */
 }
 *,
 *::before,
@@ -20,6 +18,9 @@ body {
 
   display: flex;
   flex-direction: column;
+
+  font-family: "Lexend Exa", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 li {
@@ -116,6 +117,7 @@ a {
 
 /* Pembagian body menjadi 2 antara sidebar(aside) dan main  */
 .body-container {
+  width: 100vw;
   display: flex;
   flex: 1; /* Mengisi ruang yang tersedia di body-container */
   height: calc(
@@ -125,19 +127,17 @@ a {
 
 /*2. Aside Start */
 aside {
-  flex-basis: 20%; /* Mengisi 20% lebar */
-  flex-basis: 20%;
+  flex: 0 0 20%; /* Mengisi 20% lebar */
   position: sticky;
   top: 120px; /* Menggeser aside agar tidak tertutup navbar */
   height: calc(100vh - 120px);
 }
 .sidebox {
   width: 368px;
-  height: 1080px;
   background-color: var(--templatecolor2); /* Warna latar belakang sidebar */
   /* sidebar sticky */
   position: sticky;
-  top: 107.2px;
+  top: 120px;
   height: calc(100vh - 100px);
 }
 .sidebar {
@@ -168,7 +168,7 @@ aside {
 
 /*3. Main Start */
 main {
-  flex-basis: 80%; /* Mengisi 80% lebar */
+  flex: 0 0 80%; /* Mengisi 80% lebar */
   background-color: var(--templatecolor4); /* Warna latar belakang main */
   display: flex;
   flex-direction: column;
@@ -177,8 +177,8 @@ main {
 /*3.1 Landing Page Start */
 .landing-page {
   /* ukuran page */
-  width: 1536px;
-  height: 980px;
+  width: 95%;
+  height: 100%;
   /* Tambahkan posisi dan format isi dari class ini */
   display: flex;
   align-items: flex-start;
@@ -188,8 +188,8 @@ main {
 
 .box-bg-landing-page {
   /* menentukan tinggi lebar div  */
-  height: 800px;
-  width: 1500px;
+  height: 100%;
+  width: 95%;
   border-radius: 30px;
   /* Menentukan ukuran gambar */
   background-image: url(../image/unandf.jpg);
@@ -229,8 +229,8 @@ main {
 /*3.2 Destiny Flow Landing Page Start */
 .studyflow-landing-page {
   /* ukuran page */
-  width: 1536px;
-  height: 980px;
+  width: 95%;
+  height: 100%;
   /* Tambahkan posisi dan format isi dari class ini */
   display: flex;
   align-items: center;
