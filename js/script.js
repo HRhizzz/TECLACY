@@ -16,9 +16,9 @@ function toggleProfile() {
   }
 }
 function redirectToHome() {
-  window.location.href = "home.html";
+  window.location.href = "home.php";
 }
 
 function redirectToSignIn() {
-  window.location.href = "signin.html";
+  window.location.href = "signin.php";
 }
