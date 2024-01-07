@@ -11,6 +11,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 /* Definisikan font family untuk body */
@@ -160,6 +161,22 @@ main {
   align-items: flex-start;
   justify-content: center;
   text-align: center;
+}
+.hero-bg {
+  /* menentukan tinggi lebar div  */
+  height: 700px;
+
+  border-radius: 30px;
+  background-image: url(https://markey.id/wp-content/uploads/2019/06/01-20191122-03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Menetukan posisi gambar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Membagi grid class ini */
 }
 /*3.2 Destiny Flow Landing Page Start */
 
