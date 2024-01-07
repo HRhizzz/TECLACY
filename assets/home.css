@@ -127,7 +127,7 @@ aside {
   background-color: var(--templatecolor3);
   /* mengatur format */
   padding: 20px;
-  margin: 40px 40px 40px 0px;
+  margin: 40px auto;
 }
 .sidebar ul li a {
   font-size: 1.6em;
