@@ -141,13 +141,19 @@ main {
   flex: 0 0 80%; /* Mengisi 80% lebar */
   background-color: var(--templatecolor4); /* Warna latar belakang main */
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 /*3.1 Landing Page Start */
 .landing-page {
   margin: 1em;
+  flex: 0 1 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
 }
+
 /* Landing Page End */
 
 /*3.2 Destiny Flow Landing Page Start */
