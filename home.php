@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="fitur-landing-page">
-        <div class="gambar-fitur"></div>
+        <div class="gambar-fitur gambar-studyflow"></div>
         <div class="studyflow-text">
           <div class="studyflow-welcome">
             <p>Study Flow: Mengalir Bersama Minat Anda</p>
@@ -117,7 +117,7 @@
             </p>
           </div>
         </div>
-        <div class="gambar-fitur"></div>
+        <div class="gambar-fitur gambar-destinyflow"></div>
       </div>
     </main>
   </div>

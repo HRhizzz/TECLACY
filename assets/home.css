@@ -14,7 +14,28 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+::-webkit-scrollbar-track {
+  background: #666;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232323;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #666;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232323;
+}
 /* Definisikan font family untuk body */
 body {
   height: 100vh;
@@ -39,7 +60,7 @@ a {
 /* Styling untuk Navbar */
 .navbar-container {
   width: 100vw;
-  height: 120px;
+  height: 150px;
   background-color: var(--templatecolor1);
   display: flex;
   justify-content: space-between;
@@ -132,6 +153,7 @@ aside {
 .sidebar ul li a {
   font-size: 1.6em;
   color: var(--templatecolor1);
+  font-weight: bolder;
 }
 /* Aside End */
 
@@ -150,7 +172,7 @@ main {
   justify-content: flex-start;
 }
 .hero-bg {
-  height: 700px;
+  height: 800px;
   border-radius: 30px;
   background-image: url(https://markey.id/wp-content/uploads/2019/06/01-20191122-03.jpg);
   background-size: cover;
@@ -185,12 +207,16 @@ main {
   height: 400px;
   flex: 0 0 50%;
   border-radius: 16px;
+}
+/*3.2 Study Flow Landing Page Start */
+
+.gambar-studyflow {
   background-image: url(https://markey.id/wp-content/uploads/2019/06/01-20191122-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-/*3.2 Study Flow Landing Page Start */
+
 .studyflow-text {
   margin: 1em;
   flex: 0 1 50%;
@@ -209,6 +235,12 @@ main {
 }
 /* Study Flow Landing Page End */
 /*3.3 Destiny Flow Landing Page Start */
+.gambar-destinyflow {
+  background-image: url(https://universitasmulia.ac.id/wp-content/uploads/2021/05/ilustrasi-informatics-1030x579.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .destinyflow-text {
   margin: 1em;
   flex: 0 1 50%;
