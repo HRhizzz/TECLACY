@@ -80,11 +80,17 @@ a {
   margin-right: 10px;
   font-family: "Montserrat", sans-serif;
 }
+.profile-signup-button {
+  background-color: var(--templatecolor4);
+}
+.profile-signin-button {
+  background-color: var(--templatecolor3);
+}
 .profile-signup-button a {
-  color: var(--templatecolor1);
+  color: var(--templatecolor2);
 }
 .profile-signin-button a {
-  color: var(--templatecolor4);
+  color: var(--templatecolor1);
 }
 /* Header  End*/
 
@@ -101,19 +107,12 @@ a {
 
 /*2. Aside Start */
 aside {
-  flex: 0 0 20%; /* Mengisi 20% lebar */
+  flex: 0 1 20%; /* Mengisi 20% lebar */
   position: sticky;
   top: 120px; /* Menggeser aside agar tidak tertutup navbar */
-  height: calc(100vh - 120px);
+  background-color: var(--templatecolor2);
 }
-.sidebox {
-  width: 368px;
-  background-color: var(--templatecolor2); /* Warna latar belakang sidebar */
-  /* sidebar sticky */
-  position: sticky;
-  top: 120px;
-  height: calc(100vh - 100px);
-}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -132,11 +131,8 @@ aside {
   margin: 40px 40px 40px 0px;
 }
 .sidebar ul li a {
-  /* jenis font yang digunakan pada atribut a di class sidebar */
-  font-family: "Montserrat", sans-serif;
-  /* warna a class sidebar */
+  font-size: 1.6em;
   color: var(--templatecolor1);
-  /* posisi text */
 }
 /* Aside End */
 
