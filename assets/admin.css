@@ -1,0 +1,70 @@
+:root {
+  --templatecolor1: #0b1320;
+  --templatecolor2: #1c3f60;
+  --templatecolor3: #afc1d0;
+  --templatecolor4: #f3f6fa;
+  --teks-landingpage-color: #000000;
+}
+
+/* Atur box-sizing untuk semua elemen */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #666;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #232323;
+}
+.body-container {
+  height: calc(5000px - 120px);
+  width: 100vw;
+  display: flex;
+  flex: 1;
+}
+aside {
+  flex: 0 1 20%; /* Mengisi 20% lebar */
+  position: sticky;
+  top: 120px; /* Menggeser aside agar tidak tertutup navbar */
+  background-color: var(--templatecolor2);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sidebar ul li {
+  /* Mengatur box dengan radius sudut pada sidebar */
+  width: 300px;
+  height: 60px;
+  border-radius: 16px;
+  /* Memberikan warna latar belakang */
+  background-color: var(--templatecolor3);
+  /* mengatur format */
+  padding: 20px;
+  margin: 40px auto;
+}
+.sidebar ul li a {
+  font-size: 1.6em;
+  color: var(--templatecolor1);
+  font-weight: bolder;
+}
+
+main {
+  flex: 0 0 80%; /* Mengisi 80% lebar */
+  background-color: var(--templatecolor4); /* Warna latar belakang main */
+  display: flex;
+  flex-wrap: wrap;
+}
