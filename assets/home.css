@@ -12,6 +12,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 /* Definisikan font family untuk body */
@@ -97,12 +98,10 @@ a {
 
 /* Pembagian body menjadi 2 antara sidebar(aside) dan main  */
 .body-container {
+  height: calc(5000px - 120px);
   width: 100vw;
   display: flex;
   flex: 1;
-  height: calc(
-    100vh - 120px
-  ); /* Mengurangi tinggi navbar dari tinggi viewport */
 }
 
 /*2. Aside Start */
@@ -148,37 +147,85 @@ main {
   margin: 1em;
   flex: 0 1 100%;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: center;
-}
-
-/* Landing Page End */
-.fitur-landing-page {
-  margin: 1em;
-  flex: 0 1 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
 }
 .hero-bg {
-  /* menentukan tinggi lebar div  */
   height: 700px;
-
   border-radius: 30px;
   background-image: url(https://markey.id/wp-content/uploads/2019/06/01-20191122-03.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* Menetukan posisi gambar */
+
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* Membagi grid class ini */
 }
-/*3.2 Destiny Flow Landing Page Start */
-
+.hero-welcome {
+  padding: 1%;
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--teks-landingpage-color);
+}
+.hero-description {
+  padding: 1%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--teks-landingpage-color);
+}
+/* Landing Page End */
+.fitur-landing-page {
+  margin: 1em;
+  flex: 0 1 100%;
+  display: flex;
+}
+.gambar-fitur {
+  margin: auto;
+  height: 400px;
+  flex: 0 0 50%;
+  border-radius: 16px;
+  background-image: url(https://markey.id/wp-content/uploads/2019/06/01-20191122-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*3.2 Study Flow Landing Page Start */
+.studyflow-text {
+  margin: 1em;
+  flex: 0 1 50%;
+}
+.studyflow-welcome {
+  padding: 1%;
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--teks-landingpage-color);
+}
+.studyflow-description {
+  padding: 1%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--teks-landingpage-color);
+}
+/* Study Flow Landing Page End */
+/*3.3 Destiny Flow Landing Page Start */
+.destinyflow-text {
+  margin: 1em;
+  flex: 0 1 50%;
+}
+.destinyflow-welcome {
+  flex: 1 0 100%;
+  padding: 1%;
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--teks-landingpage-color);
+}
+.destinyflow-description {
+  flex: 1 0 100%;
+  padding: 1%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--teks-landingpage-color);
+}
 /* Destiny Flow Landing Page End */
 /* Main End */

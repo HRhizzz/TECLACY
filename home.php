@@ -104,7 +104,6 @@
         </div>
       </div>
       <div class="fitur-landing-page">
-        <div class="gambar-fitur"></div>
         <div class="destinyflow-text">
           <div class="destinyflow-welcome">
             <p>Destiny Flow: Takdir Pendidikan Anda</p>
@@ -118,6 +117,7 @@
             </p>
           </div>
         </div>
+        <div class="gambar-fitur"></div>
       </div>
     </main>
   </div>
