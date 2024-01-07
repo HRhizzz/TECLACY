@@ -98,11 +98,10 @@ a {
 .body-container {
   width: 100vw;
   display: flex;
-  flex: 1; /* Mengisi ruang yang tersedia di body-container */
+  flex: 1;
   height: calc(
     100vh - 120px
   ); /* Mengurangi tinggi navbar dari tinggi viewport */
-  overflow-x: none;
 }
 
 /*2. Aside Start */
@@ -147,7 +146,6 @@ main {
 .landing-page {
   margin: 1em;
   flex: 0 1 100%;
-
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -155,7 +153,14 @@ main {
 }
 
 /* Landing Page End */
-
+.fitur-landing-page {
+  margin: 1em;
+  flex: 0 1 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
 /*3.2 Destiny Flow Landing Page Start */
 
 /* Destiny Flow Landing Page End */
