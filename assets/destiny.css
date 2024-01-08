@@ -14,7 +14,6 @@
   margin: 0;
   padding: 0;
 }
-
 body::-webkit-scrollbar {
   width: 10px;
 }
@@ -26,12 +25,13 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #232323;
 }
+/* Definisikan font family untuk body */
 body {
   height: 100vh;
   width: 100vw;
   margin: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -45,71 +45,45 @@ li {
 a {
   text-decoration: none;
 }
+
 .body-container {
   height: calc(5000px - 120px);
   width: 100vw;
   display: flex;
   flex: 1;
 }
+
+/*2. Aside Start */
 aside {
   flex: 0 1 20%; /* Mengisi 20% lebar */
+  position: sticky;
+  top: 120px; /* Menggeser aside agar tidak tertutup navbar */
   background-color: var(--templatecolor2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .sidebar ul li {
-  /* Mengatur box dengan radius sudut pada sidebar */
+  width: 250px;
   border-radius: 16px;
-  /* Memberikan warna latar belakang */
   background-color: var(--templatecolor3);
-  /* mengatur format */
-  padding: 20px 40px;
+  padding: 20px;
   margin: 40px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.sidebar ul li a {
+.sidebar ul a li {
   font-size: 1.6em;
   color: var(--templatecolor1);
   font-weight: bolder;
 }
-/* Profil */
-/* 1. profil button */
-.profile-button a {
-  display: flex;
-  flex-direction: row;
-  flex: 5;
-  justify-content: center;
-}
-.feather-user {
-  width: 2em;
-  height: 2em;
-  flex: 1 auto;
-  display: flex;
-  align-self: center;
-}
-.username {
-  flex: auto;
-  display: flex;
-  flex-direction: column;
-  font-size: 1em;
-}
 
-main {
-  flex: 0 1 80%; /* Mengisi 80% lebar */
-  background-color: var(--templatecolor4); /* Warna latar belakang main */
+.study-flow,
+.destiny-flow {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
-header {
-  display: flex;
-}
+/* Aside End */

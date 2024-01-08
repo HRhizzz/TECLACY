@@ -57,15 +57,21 @@
     <aside>
       <div class="sidebar">
         <ul>
-          <li class="search-sidebar" id="search-all">
-            <a href="#"> Search</button>
-          </li>
-          <li class="destiny-flow" id="Destiny-Flow">
-            <a href="#"> Destiny Flow</a></button>
-          </li>
-          <li class="study-flow" id="Study-Flow">
-            <a href="#">Study Flow</a></button>
-          </li>
+          <a href="#">
+            <li class="search-sidebar" id="search-all">
+              Search
+            </li>
+          </a>
+          <a href="#">
+            <li class="destiny-flow" id="Destiny-Flow">
+              Destiny Flow
+            </li>
+          </a>
+          <a href="#">
+            <li class="study-flow" id="Study-Flow">
+              Study Flow
+            </li>
+          </a>
         </ul>
       </div>
     </aside>

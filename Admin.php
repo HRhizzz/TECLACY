@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="assets/admin.css" />
   <!-- Script Utama -->
   <script src="js/script.js"></script>
-
+  <!-- Feather icon -->
+  <script src="https://unpkg.com/feather-icons"></script>
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,24 +23,36 @@
   <aside>
     <div class="sidebar">
       <ul>
-        <li class="profile-button" id="profile">
-          <a href="#">Profil</a>
-        </li>
-        <li class="destiny-flow" id="Destiny-Flow">
-          <a href="#"> Destiny Flow</a></button>
-        </li>
-        <li class="study-flow" id="Study-Flow">
-          <a href="#">Study Flow</a></button>
-        </li>
-        <li class="study-flow" id="Study-Flow">
-          <a href="#">Study Flow</a></button>
-        </li>
+        <a href="#">
+          <li class="profile-button" id="profile">
+            <i data-feather="user"></i>
+            <div class="username">
+              <p>Haris Fadhilah</p>
+              <p>211512002</p>
+            </div>
+          </li>
+        </a>
+        <a href="#">
+          <li class="destiny-flow" id="Destiny-Flow">
+            Destiny Flow
+          </li>
+        </a>
+        <a href="#">
+          <li class="study-flow" id="Study-Flow">
+            Study Flow
+          </li>
+        </a>
+        <a href="#">
+          <li class="study-flow" id="Study-Flow">
+            Study Flow
+          </li>
+        </a>
       </ul>
     </div>
   </aside>
   <main>
     <header>Update Study Flow</header>
-    <section><i data-feather="user"></i></section>
+    <section></section>
   </main>
   <script>
   feather.replace();

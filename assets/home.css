@@ -129,17 +129,13 @@ aside {
   align-items: center;
 }
 .sidebar ul li {
-  /* Mengatur box dengan radius sudut pada sidebar */
   width: 250px;
-
   border-radius: 16px;
-  /* Memberikan warna latar belakang */
   background-color: var(--templatecolor3);
-  /* mengatur format */
   padding: 20px;
   margin: 40px auto;
 }
-.sidebar ul li a {
+.sidebar ul a li {
   font-size: 1.6em;
   color: var(--templatecolor1);
   font-weight: bolder;
@@ -147,7 +143,6 @@ aside {
 
 .study-flow,
 .destiny-flow {
-  height: 200px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
