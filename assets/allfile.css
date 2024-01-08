@@ -105,6 +105,26 @@ a {
 .profile-signin-button a {
   color: var(--templatecolor1);
 }
+/* Profil Sign */
+.profile-button a {
+  display: flex;
+  flex-direction: row;
+  flex: 5;
+  justify-content: center;
+}
+.feather-user {
+  width: 2em;
+  height: 2em;
+  flex: 1 auto;
+  display: flex;
+  align-self: center;
+}
+.username {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
 /* Header  End*/
 
 /* Pembagian body menjadi 2 antara sidebar(aside) dan main  */
@@ -250,3 +270,23 @@ main {
 }
 /* Destiny Flow Landing Page End */
 /* Main End */
+
+/* DESTINYFLOW PAGE */
+#destinyflow-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.destinyflow-search {
+  margin: 20px 40px;
+  border: 2px solid var(--templatecolor2);
+  border-radius: 16px;
+  flex: 0 1 100%;
+  padding: 10px 20px;
+}

@@ -16,6 +16,9 @@
   <!-- Script Utama -->
   <script src="js/script.js"></script>
 
+  <!-- Feather icon -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

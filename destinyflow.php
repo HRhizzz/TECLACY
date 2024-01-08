@@ -17,7 +17,7 @@
   <script src="js/script.js"></script>
 
   <!-- Feather icon -->
-  <script src="path/to/dist/feather.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -88,13 +88,15 @@
         </ul>
       </div>
     </aside>
-    <main>
-
+    <main id="destinyflow-page">
+      <div class="input-container">
+        <input type="search" class="destinyflow-search" placeholder="Cari minatmu...">
+        <i data-feather="search"></i>
+      </div>
     </main>
-  </div>
-  <script>
-  feather.replace();
-  </script>
+    <script>
+    feather.replace();
+    </script>
 </body>
 
 </html>
