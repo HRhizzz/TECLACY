@@ -131,7 +131,7 @@ aside {
 .sidebar ul li {
   /* Mengatur box dengan radius sudut pada sidebar */
   width: 300px;
-  height: 60px;
+
   border-radius: 16px;
   /* Memberikan warna latar belakang */
   background-color: var(--templatecolor3);
@@ -143,6 +143,14 @@ aside {
   font-size: 1.6em;
   color: var(--templatecolor1);
   font-weight: bolder;
+}
+
+.study-flow,
+.destiny-flow {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 /* Aside End */
 
