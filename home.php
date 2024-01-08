@@ -41,15 +41,25 @@
     </nav>
     <div class="profile-sign">
       <ul>
-        <li class="profile-signup-button" id="signUp">
-          <a href="signup.php" onclick="toggleProfile()">Sign Up</a>
-        </li>
-        <li class="profile-signin-button" id="signIn">
-          <a href="signin.php" onclick="toggleProfile()">Sign In</a>
-        </li>
-        <li class="profile-button" id="profile" style="display: none">
-          <div><i data-feather="user"></i></div><a href="#">Profil</a>
-        </li>
+        <a href="signup.php" onclick="toggleProfile()">
+          <li class="profile-signup-button" id="signUp">
+            Sign Up
+          </li>
+        </a>
+        <a href="signin.php" onclick="toggleProfile()">
+          <li class="profile-signin-button" id="signIn">
+            Sign In
+          </li>
+        </a>
+        <a href="#">
+          <li class="profile-button" id="profile" style="display: none">
+            <i data-feather="user"></i>
+            <div class="username">
+              <p>Haris Fadhilah</p>
+              <p>211512002</p>
+            </div>
+          </li>
+        </a>
       </ul>
     </div>
   </header>

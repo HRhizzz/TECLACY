@@ -14,7 +14,6 @@
   margin: 0;
   padding: 0;
 }
-
 body::-webkit-scrollbar {
   width: 10px;
 }
@@ -26,12 +25,13 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #232323;
 }
+/* Definisikan font family untuk body */
 body {
   height: 100vh;
   width: 100vw;
   margin: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -45,43 +45,105 @@ li {
 a {
   text-decoration: none;
 }
+
+/* Styling untuk Navbar */
+.navbar-container {
+  width: 100vw;
+  height: 150px;
+  background-color: var(--templatecolor1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Styling untuk Logo */
+.logo {
+  margin: 30px 30px;
+  color: var(--templatecolor4);
+  font-family: "Lexend Exa", sans-serif;
+  font-size: 16px;
+}
+
+/* Styling untuk Nav List */
+.nav-list ul {
+  display: flex;
+  flex-direction: row;
+}
+.nav-list ul li {
+  font-family: "Montserrat", sans-serif;
+}
+.nav-list ul li a {
+  color: var(--templatecolor3);
+}
+
+/* Styling untuk Profile Sign */
+.profile-sign ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.profile-signup-button,
+.profile-signin-button {
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.profile-signup-button {
+  background-color: var(--templatecolor4);
+}
+.profile-signin-button {
+  background-color: var(--templatecolor3);
+}
+.profile-signup-button a {
+  color: var(--templatecolor2);
+}
+.profile-signin-button a {
+  color: var(--templatecolor1);
+}
+/* Header  End*/
+
+/* Pembagian body menjadi 2 antara sidebar(aside) dan main  */
 .body-container {
   height: calc(5000px - 120px);
   width: 100vw;
   display: flex;
   flex: 1;
 }
+
+/*2. Aside Start */
 aside {
-  flex: 0 1 20%; /* Mengisi 20% lebar */
+  flex: 0 1 20%;
+  position: sticky;
+  top: 120px;
   background-color: var(--templatecolor2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .sidebar ul li {
-  /* Mengatur box dengan radius sudut pada sidebar */
+  width: 250px;
   border-radius: 16px;
-  /* Memberikan warna latar belakang */
   background-color: var(--templatecolor3);
-  /* mengatur format */
-  padding: 20px 40px;
   margin: 40px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.sidebar ul li a {
+.sidebar ul a li {
   font-size: 1.6em;
   color: var(--templatecolor1);
   font-weight: bolder;
 }
+.destiny-flow,
+.study-flow {
+  padding: 2em;
+}
+
 /* Profil */
 /* 1. profil button */
 .profile-button a {
@@ -103,6 +165,8 @@ aside {
   flex-direction: column;
   font-size: 1em;
 }
+
+/* Aside End */
 
 main {
   flex: 0 1 80%; /* Mengisi 80% lebar */

@@ -98,6 +98,7 @@ a {
 .profile-signin-button {
   background-color: var(--templatecolor3);
 }
+
 .profile-signup-button a {
   color: var(--templatecolor2);
 }
@@ -132,7 +133,6 @@ aside {
   width: 250px;
   border-radius: 16px;
   background-color: var(--templatecolor3);
-  padding: 20px;
   margin: 40px auto;
 }
 .sidebar ul a li {
@@ -140,12 +140,9 @@ aside {
   color: var(--templatecolor1);
   font-weight: bolder;
 }
-
-.study-flow,
-.destiny-flow {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.destiny-flow,
+.study-flow {
+  padding: 2em;
 }
 /* Aside End */
 

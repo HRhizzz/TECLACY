@@ -33,13 +33,13 @@
           </li>
         </a>
         <a href="#">
-          <li class="destiny-flow" id="Destiny-Flow">
-            Destiny Flow
+          <li class="search-sidebar" id="search-all">
+            Search
           </li>
         </a>
         <a href="#">
-          <li class="study-flow" id="Study-Flow">
-            Study Flow
+          <li class="destiny-flow" id="Destiny-Flow">
+            Destiny Flow
           </li>
         </a>
         <a href="#">
