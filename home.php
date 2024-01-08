@@ -48,7 +48,7 @@
           <a href="signin.php" onclick="toggleProfile()">Sign In</a>
         </li>
         <li class="profile-button" id="profile" style="display: none">
-          <div><i data-feather="circle"></i></div><a href="#">Profil</a>
+          <div><i data-feather="user"></i></div><a href="#">Profil</a>
         </li>
       </ul>
     </div>

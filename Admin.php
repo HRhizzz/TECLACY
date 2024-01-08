@@ -22,8 +22,8 @@
   <aside>
     <div class="sidebar">
       <ul>
-        <li class="search-sidebar" id="search-all">
-          <a href="#"> Search</button>
+        <li class="profile-button" id="profile">
+          <a href="#">Profil</a>
         </li>
         <li class="destiny-flow" id="Destiny-Flow">
           <a href="#"> Destiny Flow</a></button>
@@ -39,7 +39,7 @@
   </aside>
   <main>
     <header>Update Study Flow</header>
-    <section></section>
+    <section><i data-feather="user"></i></section>
   </main>
   <script>
   feather.replace();

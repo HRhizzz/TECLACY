@@ -130,7 +130,7 @@ aside {
 }
 .sidebar ul li {
   /* Mengatur box dengan radius sudut pada sidebar */
-  width: 300px;
+  width: 250px;
 
   border-radius: 16px;
   /* Memberikan warna latar belakang */
