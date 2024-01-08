@@ -12,7 +12,7 @@
   <title>TECLACY</title>
 
   <!-- CSS Utama -->
-  <link rel="stylesheet" href="assets/home.css" />
+  <link rel="stylesheet" href="assets/allfile.css" />
   <!-- Script Utama -->
   <script src="js/script.js"></script>
 
@@ -72,12 +72,12 @@
               Search
             </li>
           </a>
-          <a href="#">
+          <a href="destinyflow.php">
             <li class="destiny-flow" id="Destiny-Flow">
               Destiny Flow
             </li>
           </a>
-          <a href="#">
+          <a href="studyflow.php">
             <li class="study-flow" id="Study-Flow">
               Study Flow
             </li>

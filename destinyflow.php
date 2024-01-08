@@ -12,7 +12,7 @@
   <title>TECLACY</title>
 
   <!-- CSS Utama -->
-  <link rel="stylesheet" href="assets/destiny.css" />
+  <link rel="stylesheet" href="assets/allfile.css" />
   <!-- Script Utama -->
   <script src="js/script.js"></script>
 
@@ -28,6 +28,44 @@
 </head>
 
 <body>
+  <header class="navbar-container">
+    <!-- font nama logo Lexend Exa -->
+    <div class="logo">
+      <p id="logo-teclacy">TECLACY</p>
+    </div>
+    <nav class="nav-list">
+      <ul>
+        <li><a href="home.php">HOME</a></li>
+        <li><a href="#">BERITA</a></li>
+        <li><a href="#">PROFESI IT</a></li>
+        <li><a href="#">BOOTCAMP</a></li>
+        <li><a href="#">PROFESI IT</a></li>
+      </ul>
+    </nav>
+    <div class="profile-sign">
+      <ul>
+        <a href="signup.php" onclick="toggleProfile()">
+          <li class="profile-signup-button" id="signUp">
+            Sign Up
+          </li>
+        </a>
+        <a href="signin.php" onclick="toggleProfile()">
+          <li class="profile-signin-button" id="signIn">
+            Sign In
+          </li>
+        </a>
+        <a href="#">
+          <li class="profile-button" id="profile" style="display: none">
+            <i data-feather="user"></i>
+            <div class="username">
+              <p>Haris Fadhilah</p>
+              <p>211512002</p>
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </header>
   <div class="body-container">
     <aside>
       <div class="sidebar">
