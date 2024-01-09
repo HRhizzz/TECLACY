@@ -1,3 +1,28 @@
+<?php
+session_start();
+if( isset($_SESSION["admin"])) {
+    header("Location: admin.php");
+    exit;
+} else if ( isset($_SESSION["user"])) {
+    header("Location: signin.php");
+    exit;
+}
+include 'query/functions.php';
+
+if( isset($_POST["submit"])) {
+    if( registrasi($_POST) > 0 ) {
+    echo "<script>
+        alert('User Baru Berhasil Ditambahkan');
+        document.location.href = 'signin.php';
+        </script>
+    ";
+    } else {
+        echo mysqli_error($conn);
+    }
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,31 +53,31 @@
   <!-- Tingkat 1 dari z-axis -->
   <div class="posisi-wrapper">
     <div class="login-page-wrapper">
-      <form action="#">
+      <form action="" method="post">
         <h2>Mari Bergabung</h2>
         <h3>Masukkan data diri anda</h3>
         <div class="input-field">
-          <input type="text" required>
+          <input type="text" name="nama" required>
           <label>Nama Lengkap</label>
         </div>
         <div class="input-field">
-          <input type="text" required>
+          <input type="text" name="nim" required>
           <label>NIM</label>
         </div>
         <div class="input-field">
-          <input type="email" required>
+          <input type="email" name="email" required>
           <label>Email</label>
         </div>
         <div class="input-field">
-          <input type="password" required>
+          <input type="password" name="password" required>
           <label>Password</label>
         </div>
         <div class="input-field">
-          <input type="password" required>
+          <input type="password" name="password2" required>
           <label>Konfirmasi Password</label>
         </div>
         </br>
-        <button type="submit" onclick="redirectToSignIn()">Daftar</button>
+        <button type="submit" name="submit">Daftar</button>
         <div class="login">
           <p>Sudah punya akun?<a href="signin.php">sign in</a></p>
         </div>
