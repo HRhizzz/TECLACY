@@ -1,7 +1,16 @@
 <?php
 
-?>
+$kategori="";
+$katakunci="";
+// cek apakah tombol search sudah ditekan atau belum
+if (isset($_POST['search'])) {
+    $kategori = $_POST['kategori'];
+    $katakunci = $_POST['katakunci'];
 
+}
+
+include "query/functions.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,7 +58,7 @@
             Sign Up
           </li>
         </a>
-        <a href="signin.php" onclick="toggleProfile()">
+        <a href="signin.php" id="signin">
           <li class="profile-signin-button" id="signIn">
             Sign In
           </li>

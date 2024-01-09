@@ -15,10 +15,3 @@ function toggleProfile() {
     profileButton.style.display = "none";
   }
 }
-function redirectToHome() {
-  window.location.href = "home.php";
-}
-
-function redirectToSignIn() {
-  window.location.href = "signin.php";
-}

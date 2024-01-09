@@ -20,40 +20,42 @@
 </head>
 
 <body>
-  <aside>
-    <div class="sidebar">
-      <ul>
-        <a href="#">
-          <li class="profile-button" id="profile">
-            <i data-feather="user"></i>
-            <div class="username">
-              <p>Haris Fadhilah</p>
-              <p>211512002</p>
-            </div>
-          </li>
-        </a>
-        <a href="#">
-          <li class="search-sidebar" id="search-all">
-            Search
-          </li>
-        </a>
-        <a href="#">
-          <li class="destiny-flow" id="Destiny-Flow">
-            Destiny Flow
-          </li>
-        </a>
-        <a href="#">
-          <li class="study-flow" id="Study-Flow">
-            Study Flow
-          </li>
-        </a>
-      </ul>
-    </div>
-  </aside>
-  <main>
-    <header>Update Study Flow</header>
-    <section></section>
-  </main>
+  <div class="body-container">
+    <aside>
+      <div class="sidebar">
+        <ul>
+          <a href="#">
+            <li class="profile-button" id="profile">
+              <i data-feather="user"></i>
+              <div class="username">
+                <p>Haris Fadhilah</p>
+                <p>211512002</p>
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li class="search-sidebar" id="search-all">
+              Search
+            </li>
+          </a>
+          <a href="#">
+            <li class="destiny-flow" id="Destiny-Flow">
+              Destiny Flow
+            </li>
+          </a>
+          <a href="#">
+            <li class="study-flow" id="Study-Flow">
+              Study Flow
+            </li>
+          </a>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <header>Update Study Flow</header>
+      <section></section>
+    </main>
+  </div>
   <script>
   feather.replace();
   </script>

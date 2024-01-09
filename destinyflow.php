@@ -1,7 +1,18 @@
-<?php
+<? session_start();
+if(!isset($_SESSION["user"]))
+header("location: ../signin.php");
 
+$kategori="";
+$katakunci="";
+// cek apakah tombol search sudah ditekan atau belum
+if (isset($_POST['search'])) {
+$kategori = $_POST['minat'];
+$katakunci = $_POST['katakunci'];
+
+}
+
+include "../query/functions.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,9 +101,13 @@
     </aside>
     <main id="destinyflow-page">
       <div class="input-container">
-        <input type="search" class="destinyflow-search" placeholder="Cari minatmu...">
-        <i data-feather="search"></i>
+        <input type="search" class="destinyflow-search" placeholder="Masukan minatmu...">
+        <a href="">
+          <p>cari</p>
+          <i data-feather="search"></i>
+        </a>
       </div>
+
     </main>
     <script>
     feather.replace();

@@ -1,3 +1,42 @@
+<?php
+session_start();if( isset($_SESSION["admin"])) {
+    header("Location: admin.php");
+    exit;
+} else if ( isset($_SESSION["user"])) {
+    header("Location: signin.php");
+    exit;
+}
+
+include "query/functions.php";
+
+if( isset($_POST["submit"])) {
+
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+
+    $admin = mysqli_query($conn, "SELECT email FROM user");
+    $result = mysqli_query($conn, "SELECT * FROM user WHERE email = '$email'");
+    
+    // cek email
+    if( mysqli_num_rows($admin) === 1 ) {
+        // cek password
+        $row = mysqli_fetch_assoc($result);
+        if( password_verify($password, $row["password"]) ) {
+            $_SESSION["user"] = "$email";
+
+            header("Location: home.php");
+            exit;
+            } 
+    }
+
+    $error = true;
+
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,19 +67,19 @@
   <!-- Tingkat 1 dari z-axis -->
   <div class="posisi-wrapper">
     <div class="login-page-wrapper">
-      <form action="#">
+      <form action="" method="post">
         <h2>Masuk</h2>
         <h3>Masukkan akun anda</h3>
         <div class="input-field">
-          <input type="text" required>
-          <label>NIM</label>
+          <input type="email" name="email" required>
+          <label>Email</label>
         </div>
         <div class="input-field">
-          <input type="password" required>
+          <input type="password" name="password" required>
           <label>Password</label>
         </div>
         </br>
-        <button type="submit" onclick="redirectToHome()">Login</button>
+        <button type="submit" name="submit">Login</button>
         <div class="login">
           <p>Belum punya akun?<a href="signup.php">sign up</a></p>
         </div>
